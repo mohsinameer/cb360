@@ -5,7 +5,7 @@ import { TbBrandXFilled } from 'react-icons/tb';
 const team = [
   {
     name: 'Noel Silveira',
-    // role: 'Founder / CEO',
+   
     role: 'Co-Founder',
     // imageUrl:
     //   'https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZSUyMG1hbiUyMGZvdW5kZXJ8ZW58MHx8MHx8fDA%3D',
@@ -16,18 +16,7 @@ const team = [
     xUrl: '#!',
     linkedinUrl: '#!',
   },
-  // {
-  //   name: 'Siddhesh Ajarekar',
-  //   role: 'Co-Founder / CTO',
-  //   imageUrl:
-  //     'https://images.unsplash.com/photo-1557862921-37829c790f19?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHRlY2glMjBtYW4lMjBmb3VuZGVyfGVufDB8fDB8fHww',
-  //   bio: [
-  //     'Siddesh is an IT professional with a robust background in IT architecture, automation, IT security, Cloud computing. His experience spans various industries, showcasing a successful track record of overseeing and implementing innovative IT solutions.',
-  //     'Siddesh’s  expertise in digital transformation makes the tech cutting edge services which nobody can offer instantly',
-  //   ],
-  //   xUrl: '#!',
-  //   linkedinUrl: '#!',
-  // },
+ 
   {
     name: 'Hussein Obeed',
     role: 'Partner / Co-Founder',
@@ -68,7 +57,7 @@ const AboutTeamSection = () => {
           >
             <img
               className='aspect-[4/5] w-64 flex-none rounded-2xl object-cover'
-              src={person.imageUrl}
+              // src={person.imageUrl}
               alt={person.name}
             />
             <div className='max-w-xl flex-auto'>
