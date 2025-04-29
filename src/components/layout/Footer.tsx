@@ -12,7 +12,9 @@ const Footer = () => {
       </h2>
       <div className='mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32'>
         <div className='xl:grid xl:grid-cols-3 xl:gap-8'>
-          <div className='space-y-8'>
+
+          {/* Change - Start */}
+          {/* <div className='space-y-8'>
             <Image
               className='h-12 object-contain object-left'
               height={60}
@@ -20,6 +22,7 @@ const Footer = () => {
               src={'/cb360-logo.svg'}
               alt='CB360 logo'
             />
+            <p>ABC</p>
             <p className='text-sm leading-6 text-gray-600'>
               Revolutionize Your Growth: Our powerful tools ensures reduced OpEx
               and doubles your business success
@@ -36,7 +39,53 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
+
+
+<div className='space-y-8'>
+  <div className='flex items-center space-x-4'>
+    <Image
+      className='h-12 object-contain object-left'
+      height={60}
+      width={200}
+      src={'/cb360-logo.svg'}
+      alt='CB360 logo'
+    />
+    <div className='flex items-center space-x-2'>
+      <span className='text-sm text-gray-500'>Powered by</span>
+      <Image
+        className='h-8 w-auto object-contain'
+        height={80}
+        width={300}
+        // src={'/Trading.jpg'}
+        src={'/Trading-logo.jpg'}
+        alt='Powered by logo'
+      />
+    </div>
+  </div>
+
+  <p className='text-sm leading-6 text-gray-600'>
+    Revolutionize Your Growth: Our powerful tools ensure reduced OpEx
+    and double your business success.
+  </p>
+
+  <div className='flex space-x-6'>
+    {footerNavigation.connect.map((item) => (
+      <Link
+        key={item.name}
+        href={item.href}
+        className='text-gray-400 hover:text-gray-500'
+      >
+        <span className='sr-only'>{item.name}</span>
+        <item.icon className='h-6 w-6' aria-hidden='true' />
+      </Link>
+    ))}
+  </div>
+</div>
+
+
+          {/* Change - End  */}
+
           <div className='mt-16 grid grid-cols-2 gap-8 gap-y-12 lg:grid-cols-3 xl:col-span-3 xl:mt-0'>
             {/* <div className='bg-blue-50 md:grid md:grid-cols-2 md:gap-8'> */}
             <div>
